@@ -40,7 +40,7 @@
                                                 {{ $category->slug }}
                                             </td>
                                             <td>
-                                                {!! $category->renderStatus !!}
+                                                {!! renderStatus($category->status) !!}
                                             </td>
                                             <td class="d-flex">
                                                 <a class="btn btn-sm btn-secondary mx-1"
