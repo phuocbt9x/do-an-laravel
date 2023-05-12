@@ -185,4 +185,7 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+    'paginate' => [
+        'limit' => env('PAGINATE_LIMIT', 10),
+    ]
 ];
