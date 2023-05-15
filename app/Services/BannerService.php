@@ -51,6 +51,7 @@ class BannerService {
 
     public function delete(Banner $banner): ?bool
     {
+        $this->deleteImage($banner->image);
         return $banner->delete();
     }
 }

@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateBannerRequest;
 use App\Models\Banner;
 use App\Services\BannerService;
 use Illuminate\View\View;
+use Symfony\Component\HttpFoundation\Response;
 
 class BannerController extends Controller
 {
@@ -78,6 +79,9 @@ class BannerController extends Controller
      */
     public function destroy(Banner $banner)
     {
-        //
+        $this->bannerService->delete($banner);
+        return response()->json([
+            'href' => route('banner.index'),
+        ], Response::HTTP_OK);
     }
 }
