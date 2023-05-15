@@ -279,5 +279,11 @@
     });
 </script>
 <script type="module" src="{{ asset('assets/js/action.js') }}"></script>
+<script src="{{ asset('assets/ckeditor/ckeditor.js') }}"></script>
+<script>
+    // Replace the <textarea id="editor1"> with a CKEditor 4
+    // instance, using default configuration.
+    CKEDITOR.replace('ckEditor');
+</script>
 </body>
 </html>

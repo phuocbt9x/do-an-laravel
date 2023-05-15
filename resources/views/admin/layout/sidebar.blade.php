@@ -16,6 +16,13 @@
             </li>
 
             <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ route('banner.index') }}">
+                    <i class="align-middle" data-feather="film"></i>
+                    <span class="align-middle">Banners</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
                 <a class="sidebar-link" href="{{ route('category.index') }}">
                     <i class="align-middle" data-feather="align-left"></i>
                     <span class="align-middle">Categories</span>

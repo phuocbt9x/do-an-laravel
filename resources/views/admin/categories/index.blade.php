@@ -42,16 +42,18 @@
                                             <td>
                                                 {!! renderStatus($category->status) !!}
                                             </td>
-                                            <td class="d-flex">
-                                                <a class="btn btn-sm btn-secondary mx-1"
-                                                   href="{{ route('category.edit', $category->slug) }}">
-                                                    <i class="align-middle" data-feather="edit"></i>
-                                                </a>
+                                            <td>
+                                                <div class="d-flex">
+                                                    <a class="btn btn-sm btn-secondary mx-1"
+                                                       href="{{ route('category.edit', $category->slug) }}">
+                                                        <i class="align-middle" data-feather="edit"></i>
+                                                    </a>
 
-                                                <button class="btn btn-sm btn-danger btn-delete-item"
-                                                   data-url="{{ route('category.delete', $category->slug) }}">
-                                                    <i class="align-middle" data-feather="trash"></i>
-                                                </button>
+                                                    <button class="btn btn-sm btn-danger btn-delete-item"
+                                                            data-url="{{ route('category.delete', $category->slug) }}">
+                                                        <i class="align-middle" data-feather="trash"></i>
+                                                    </button>
+                                                </div>
                                             </td>
                                         </tr>
                                     @endforeach

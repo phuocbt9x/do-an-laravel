@@ -3,7 +3,7 @@
     <main class="content">
         <div class="container-fluid p-0">
             <div class="mb-3">
-                <h1 class="h3 d-inline align-middle">Form Category</h1>
+                <h1 class="h3 d-inline align-middle">Category Form</h1>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -17,8 +17,8 @@
                                     @method('PUT')
                                 @endif
                                 <div class="form-group mb-3">
-                                    <label for="name" class="mb-1">Name Category</label>
-                                    <input value="{{ $category?->name ?? '' }}" type="text" class="form-control" name="name"
+                                    <label for="name" class="mb-1">Name</label>
+                                    <input value="{{ $category?->name ?? old('name') }}" type="text" class="form-control" name="name"
                                            id="name" placeholder="Enter name">
                                     @error('name')
                                     <p class="text-danger">{{ $message }}</p>

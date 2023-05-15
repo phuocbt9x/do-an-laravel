@@ -9,5 +9,4 @@ class CategoryRepository extends BaseRepository
     {
         return Category::class;
     }
-
 }
